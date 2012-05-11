@@ -1,0 +1,28 @@
+{
+  "name":        "playtable",
+  "version":     "1.0.0",
+  "author":      "Jeff Stieler <jeff.m.stieler@gmail.com> (http://jeffstieler.com)",
+  "keywords":    "turntable playlist manager bot queue",
+  "description": "A web controllable Turntable.FM bot, modeled a bit after Github's Play",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        "http://github.com/jeffstieler/playtable/raw/master/LICENSE"
+  }],
+
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/jeffstieler/playtable.git"
+  },
+
+  "dependencies": {
+    "express": "2.5.9",
+	"ttapi": "1.4.0"
+  },
+
+  "main": "./index",
+
+  "bin": {
+    "hubot": "./bin/hubot"
+  }
+}
+
