@@ -35,6 +35,13 @@ var PlayTable = function(user_auth, user_id, room_id) {
 		}
 	});
 
+	bot.on('newsong', function(newsong){
+		// remove the previous song to avoid hearing the same songs over and over
+		bot.playlistAll(function(playlist){
+			bot.playlistRemove(playlist.list.length - 1);
+		});
+	});
+
 	this.bot = bot;
 
 	// this really should be the "debug" config..
